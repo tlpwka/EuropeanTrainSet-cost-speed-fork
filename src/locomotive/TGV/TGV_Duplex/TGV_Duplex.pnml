@@ -21,7 +21,7 @@ item(FEAT_TRAINS, TGV_Duplex, 1041){
         dual_headed:                    1;
         
         //spec
-        speed:                          362km/h;
+        speed:                          332km/h;
         power:                          10000 kW;
         weight:                         40 ton;
         tractive_effort_coefficient:    0.3;
@@ -52,10 +52,10 @@ item(FEAT_TRAINS, TGV_Duplex, 1041){
 	graphics {
         default:                        sw_TGV_Duplex_engine;
         purchase:                       sw_TGV_Duplex_purchase;
-        speed:                          High_Speed_Train;
+        speed:                          332;
         loading_speed:                  25;
-        cost_factor:                    10;
-        running_cost_factor:            150;
+        cost_factor:                    62;
+        running_cost_factor:            1200;
         cargo_capacity:                 0;
         purchase_cargo_capacity:        0;
         can_attach_wagon:               sw_TGV_Duplex_wagon_attach;
@@ -67,8 +67,8 @@ item(FEAT_TRAINS, TGV_Duplex, 1041){
     livery_override(ETS_Passenger_Car) {
         default:                        sw_TGV_Duplex_wagon;
         cargo_subtype_text:             sw_TGV_Duplex_cargo_subtype_text;
-        cargo_capacity:                 170;
+        cargo_capacity:                 117;
         loading_speed:                  25;
-        running_cost_factor:            150;
+        running_cost_factor:            65;
         }
         }

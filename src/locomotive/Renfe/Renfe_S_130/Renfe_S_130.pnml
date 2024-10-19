@@ -21,7 +21,7 @@ item(FEAT_TRAINS, Renfe_S_130, 1040){
         dual_headed:                    1;
         
         //spec
-        speed:                          260km/h;
+        speed:                          370km/h;
         power:                          8000 kW;
         weight:                         40 ton;
         tractive_effort_coefficient:    0.3;
@@ -53,8 +53,8 @@ item(FEAT_TRAINS, Renfe_S_130, 1040){
         default:                        sw_Renfe_S_130_engine;
         purchase:                       sw_Renfe_S_130_purchase;
         loading_speed:                  25;
-        cost_factor:                    10;
-        running_cost_factor:            150;
+        cost_factor:                    75;
+        running_cost_factor:            1350;
         cargo_capacity:                 0;
         purchase_cargo_capacity:        0;
         can_attach_wagon:               sw_Renfe_S_130_wagon_attach;
@@ -64,9 +64,9 @@ item(FEAT_TRAINS, Renfe_S_130, 1040){
 
     livery_override(ETS_Passenger_Car) {
         default:                        sw_Renfe_S_130_wagon;
-        cargo_capacity:                 85;
+        cargo_capacity:                 60;
         loading_speed:                  25;
-        running_cost_factor:            150;
+        running_cost_factor:            55;
         }
         }
         

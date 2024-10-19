@@ -51,10 +51,10 @@ item(FEAT_TRAINS, BB15000, 1129){
     graphics {
         default:                        sw_BB15000_engine;
         purchase:                       sw_BB15000_purchase;
-        speed:                          Regular_Speed_Train;
+        speed:                          160;
         cargo_capacity:                 0;
-        cost_factor:                    10;
-        running_cost_factor:            150;
+        cost_factor:                    50;
+        running_cost_factor:            800;
         cargo_subtype_text:             sw_BB15000_cargo_subtype_text;
         additional_text:                string(STR_REFIT_ADDITIONAL_BB15000);
         }

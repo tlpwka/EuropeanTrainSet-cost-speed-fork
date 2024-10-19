@@ -52,10 +52,10 @@ item(FEAT_TRAINS, TGV_Pos, 1047){
 	graphics {
         default:                        sw_TGV_Pos_engine;
         purchase:                       sw_TGV_POS_purchase;
-        speed:                          High_Speed_Train;
+        speed:                          362;
         loading_speed:                  25;
-        cost_factor:                    10;
-        running_cost_factor:            150;
+        cost_factor:                    70;
+        running_cost_factor:            1300;
         cargo_capacity:                 0;
         purchase_cargo_capacity:        0;
         can_attach_wagon:               sw_TGV_Pos_wagon_attach;
@@ -67,8 +67,8 @@ item(FEAT_TRAINS, TGV_Pos, 1047){
     livery_override(ETS_Passenger_Car) {
         default:                        sw_TGV_Pos_wagon;
         cargo_subtype_text:             sw_TGV_Pos_cargo_subtype_text;
-        cargo_capacity:                 85;
+        cargo_capacity:                 65;
         loading_speed:                  25;
-        running_cost_factor:            150;
+        running_cost_factor:            60;
         }
         }
