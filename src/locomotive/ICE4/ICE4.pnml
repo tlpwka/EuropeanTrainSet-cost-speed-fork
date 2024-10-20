@@ -53,8 +53,8 @@ item(FEAT_TRAINS, ICE4, 1125){
         default:                        sw_ICE4_engine;
         purchase:                       sw_ICE4_purchase;
         loading_speed:                  25;
-        cost_factor:                    245;
-        running_cost_factor:            600;
+        cost_factor:                    70*param_purchase_cost;
+        running_cost_factor:            95*param_running_cost;
         can_attach_wagon:               sw_ICE4_wagon_attach;
         cargo_subtype_text:             sw_ICE4_cargo_subtype_text;
         additional_text:                string(STR_REFIT_ADDITIONAL_ICE4);
@@ -65,7 +65,7 @@ item(FEAT_TRAINS, ICE4, 1125){
         cargo_subtype_text:             sw_ICE4_cargo_subtype_text;
         cargo_capacity:                 55;
         loading_speed:                  25;
-        running_cost_factor:            50;
+        running_cost_factor:            29*param_running_cost;
         power:                          948;
         weight:                         67;
         }

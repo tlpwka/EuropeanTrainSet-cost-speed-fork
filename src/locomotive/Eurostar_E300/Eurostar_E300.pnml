@@ -42,7 +42,7 @@ item(FEAT_TRAINS, Eurostar_E300, 1035){
         
         //Costs
         refit_cost:                     0;
-        running_cost_base:              RUNNING_COST_DIESEL;
+        running_cost_base:              RUNNING_COST_ELECTRIC;
         
         //Flags
         misc_flags:                     bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_AUTOREFIT);
@@ -54,8 +54,8 @@ item(FEAT_TRAINS, Eurostar_E300, 1035){
         purchase:                       sw_Eurostar_E300_purchase;
         speed:                          320;
         loading_speed:                  25;
-        cost_factor:                    58;
-        running_cost_factor:            1150;
+        cost_factor:                    58*param_purchase_cost;
+        running_cost_factor:            90*param_running_cost;
         cargo_capacity:                 0;
         purchase_cargo_capacity:        0;
         can_attach_wagon:               sw_Eurostar_E300_wagon_attach;
@@ -69,6 +69,6 @@ item(FEAT_TRAINS, Eurostar_E300, 1035){
         cargo_subtype_text:             sw_Eurostar_E300_cargo_subtype_text;
         cargo_capacity:                 55;
         loading_speed:                  25;
-        running_cost_factor:            100;
+        running_cost_factor:            28*param_running_cost;
         }
         }

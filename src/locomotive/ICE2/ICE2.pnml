@@ -54,8 +54,8 @@ item(FEAT_TRAINS, ICE2, 1127){
         purchase:                       sw_ICE2_purchase;
         cargo_capacity:                 0;
         loading_speed:                  25;
-        cost_factor:                    60;
-        running_cost_factor:            1100;
+        cost_factor:                    60*param_purchase_cost;
+        running_cost_factor:            90*param_running_cost;
         can_attach_wagon:               sw_ICE2_wagon_attach;
         cargo_subtype_text:             sw_ICE2_cargo_subtype_text;
         additional_text:                string(STR_REFIT_ADDITIONAL_ICE2);
@@ -66,7 +66,7 @@ item(FEAT_TRAINS, ICE2, 1127){
         cargo_subtype_text:             sw_ICE2_cargo_subtype_text;
         cargo_capacity:                 50;
         loading_speed:                  25;
-        running_cost_factor:            50;
+        running_cost_factor:            27*param_running_cost;
         weight:                         51;
         }
         }

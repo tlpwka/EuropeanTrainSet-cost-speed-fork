@@ -42,7 +42,7 @@ item(FEAT_TRAINS, Renfe_S_130, 1040){
         
         //Costs
         refit_cost:                     0;
-        running_cost_base:              RUNNING_COST_DIESEL;
+        running_cost_base:              RUNNING_COST_ELECTRIC;
         
         //Flags
         misc_flags:                     bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_MU,TRAIN_FLAG_AUTOREFIT);
@@ -53,8 +53,8 @@ item(FEAT_TRAINS, Renfe_S_130, 1040){
         default:                        sw_Renfe_S_130_engine;
         purchase:                       sw_Renfe_S_130_purchase;
         loading_speed:                  25;
-        cost_factor:                    75;
-        running_cost_factor:            1350;
+        cost_factor:                    75*param_running_cost;
+        running_cost_factor:            97*param_running_cost;
         cargo_capacity:                 0;
         purchase_cargo_capacity:        0;
         can_attach_wagon:               sw_Renfe_S_130_wagon_attach;
@@ -66,7 +66,7 @@ item(FEAT_TRAINS, Renfe_S_130, 1040){
         default:                        sw_Renfe_S_130_wagon;
         cargo_capacity:                 60;
         loading_speed:                  25;
-        running_cost_factor:            55;
+        running_cost_factor:            28*param_running_cost;
         }
         }
         

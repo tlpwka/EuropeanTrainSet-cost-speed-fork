@@ -42,7 +42,7 @@ item(FEAT_TRAINS, TGV_Sud_Est, 1042){
         
         //Costs
         refit_cost:                     0;
-        running_cost_base:              RUNNING_COST_DIESEL;
+        running_cost_base:              RUNNING_COST_ELECTRIC;
         
         //Flags
         misc_flags:                     bitmask(TRAIN_FLAG_MU,TRAIN_FLAG_AUTOREFIT);
@@ -54,8 +54,8 @@ item(FEAT_TRAINS, TGV_Sud_Est, 1042){
         purchase:                       sw_TGV_Sud_Est_Orange_purchase;
         cargo_subtype_text:             sw_TGV_Sud_Est_cargo_subtype_text;
         loading_speed:                  25;
-        cost_factor:                    55;
-        running_cost_factor:            1050;
+        cost_factor:                    58*param_purchase_cost;
+        running_cost_factor:            90*param_running_cost;
         cargo_capacity:                 0;
         purchase_cargo_capacity:        0;
         can_attach_wagon:               sw_TGV_Sud_Est_wagon_attach;
@@ -69,6 +69,6 @@ item(FEAT_TRAINS, TGV_Sud_Est, 1042){
         weight:                         38;
         cargo_capacity:                 45;
         loading_speed:                  25;
-        running_cost_factor:            55;
+        running_cost_factor:            30*param_running_cost;
         }
         }
