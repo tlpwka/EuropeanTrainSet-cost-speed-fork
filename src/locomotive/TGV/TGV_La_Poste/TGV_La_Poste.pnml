@@ -52,7 +52,7 @@ item(FEAT_TRAINS, TGV_La_Poste, 1045){
 	graphics {
         default:                        sw_TGV_La_Poste_engine;
         purchase:                       sw_TGV_La_Poste_purchase;
-        speed:                          332;
+        speed:                          329;
         loading_speed:                  25;
         cost_factor:                    60*param_purchase_cost;
         running_cost_factor:            88*param_running_cost;
