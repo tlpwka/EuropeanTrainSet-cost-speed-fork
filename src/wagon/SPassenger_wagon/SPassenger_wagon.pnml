@@ -33,7 +33,7 @@ item (FEAT_TRAINS, ETS_SPassenger_Car, 1130){
         cargo_capacity:                 80;
         refittable_cargo_classes:       NO_CARGO_CLASS;
         non_refittable_cargo_classes:   NO_CARGO_CLASS;
-        cargo_allow_refit:              [PASS];
+        cargo_allow_refit:              [PASS, MAIL, VALU];
         cargo_disallow_refit:           [];
 
         //Costs

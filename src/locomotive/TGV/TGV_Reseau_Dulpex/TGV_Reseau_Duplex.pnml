@@ -21,7 +21,7 @@ item(FEAT_TRAINS, TGV_Reseau_Duplex, 1043){
         dual_headed:                    1;
         
         //spec
-        speed:                          330km/h;
+        speed:                          329km/h;
         power:                          10000 kW;
         weight:                         40 ton;
         tractive_effort_coefficient:    0.3;
@@ -52,7 +52,7 @@ item(FEAT_TRAINS, TGV_Reseau_Duplex, 1043){
 	graphics {
         default:                        sw_TGV_Reseau_Duplex_engine;
         purchase:                       sw_TGV_Reseau_Duplex_purchase;
-        speed:                          330;
+        speed:                          329;
         loading_speed:                  25;
         cost_factor:                    62*param_purchase_cost;
         running_cost_factor:            95*param_running_cost;

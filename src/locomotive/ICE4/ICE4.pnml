@@ -21,7 +21,7 @@ item(FEAT_TRAINS, ICE4, 1125){
         dual_headed:                    1;
         
         //spec
-        speed:                          365km/h;
+        speed:                          390km/h;
         power:                          700 kW;
         weight:                         67 ton;
         tractive_effort_coefficient:    0.3;

@@ -14,14 +14,14 @@ item(FEAT_TRAINS, TGV_Pos, 1047){
     property {
         name:                           string(STR_TGV_Pos_NAME);
         climates_available:             ALL_CLIMATES;
-        introduction_date:              date(2006, 1, 1);
+        introduction_date:              date(2010, 1, 1);
         track_type:                     ELRL;
         engine_class:                   ENGINE_CLASS_ELECTRIC;
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
         dual_headed:                    1;
         
         //spec
-        speed:                          362km/h;
+        speed:                          370km/h;
         power:                          8000 kW;
         weight:                         40 ton;
         tractive_effort_coefficient:    0.3;
@@ -37,7 +37,7 @@ item(FEAT_TRAINS, TGV_Pos, 1047){
         cargo_capacity:                 1;
         refittable_cargo_classes:       NO_CARGO_CLASS;
         non_refittable_cargo_classes:   NO_CARGO_CLASS;
-        cargo_allow_refit:              [PASS];
+        cargo_allow_refit:              [PASS, MAIL, VALU];
         cargo_disallow_refit:           [];
         
         //Costs

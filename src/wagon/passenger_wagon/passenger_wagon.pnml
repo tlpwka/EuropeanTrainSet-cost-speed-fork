@@ -24,7 +24,7 @@ item (FEAT_TRAINS, ETS_Passenger_Car, 1031){
         cargo_capacity:                 50;
         refittable_cargo_classes:       NO_CARGO_CLASS;
         non_refittable_cargo_classes:   NO_CARGO_CLASS;
-        cargo_allow_refit:              [PASS];
+        cargo_allow_refit:              [PASS, MAIL, VALU];
         cargo_disallow_refit:           [];
 
         //Costs
