@@ -21,7 +21,7 @@ item(FEAT_TRAINS, AGV, 1034){
         dual_headed:                    1;
         
         //spec
-        speed:                          390km/h;
+        speed:                          388km/h;
         power:                          8000 kW;
         weight:                         40 ton;
         tractive_effort_coefficient:    0.3;
@@ -37,7 +37,7 @@ item(FEAT_TRAINS, AGV, 1034){
         cargo_capacity:                 85;
         refittable_cargo_classes:       NO_CARGO_CLASS;
         non_refittable_cargo_classes:   NO_CARGO_CLASS;
-        cargo_allow_refit:              [PASS];
+        cargo_allow_refit:              [PASS, MAIL, VALU];
         cargo_disallow_refit:           [];
         
         //Costs
@@ -52,7 +52,7 @@ item(FEAT_TRAINS, AGV, 1034){
     graphics {
         default:                        sw_AGV_engine;
         purchase:                       sw_AGV_purchase;
-        speed:                          390;
+        speed:                          388;
         loading_speed:                  25;
         cost_factor:                    78*param_purchase_cost;
         running_cost_factor:            98*param_running_cost;

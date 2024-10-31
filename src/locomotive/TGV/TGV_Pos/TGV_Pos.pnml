@@ -21,7 +21,7 @@ item(FEAT_TRAINS, TGV_Pos, 1047){
         dual_headed:                    1;
         
         //spec
-        speed:                          370km/h;
+        speed:                          368km/h;
         power:                          8000 kW;
         weight:                         40 ton;
         tractive_effort_coefficient:    0.3;
@@ -52,7 +52,7 @@ item(FEAT_TRAINS, TGV_Pos, 1047){
 	graphics {
         default:                        sw_TGV_Pos_engine;
         purchase:                       sw_TGV_POS_purchase;
-        speed:                          362;
+        speed:                          368;
         loading_speed:                  25;
         cost_factor:                    70*param_purchase_cost;
         running_cost_factor:            99*param_running_cost;

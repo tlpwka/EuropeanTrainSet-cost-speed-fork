@@ -6,7 +6,11 @@ TGV Old
 
 // Switch
 #include "TGV_La_Poste_switch.pnml"
-
+/* SPEED */
+    switch (FEAT_TRAINS, SELF, tgv_post_speed, current_year) {
+	    0..2029: return 329;                        // Until 2024, Speed = 390 km/h
+	    return 503;                                 // After 2024, Speed = 504 km/h
+    }
 /*--------------------------------------------------------------------
 열차정보
 --------------------------------------------------------------------*/
@@ -22,7 +26,7 @@ item(FEAT_TRAINS, TGV_La_Poste, 1045){
         
         //spec
         speed:                          332km/h;
-        power:                          8000 kW;
+        power:                          10000 kW;
         weight:                         40 ton;
         tractive_effort_coefficient:    0.3;
         air_drag_coefficient:           0.01;
@@ -52,7 +56,7 @@ item(FEAT_TRAINS, TGV_La_Poste, 1045){
 	graphics {
         default:                        sw_TGV_La_Poste_engine;
         purchase:                       sw_TGV_La_Poste_purchase;
-        speed:                          329;
+        speed:                          tgv_post_speed;
         loading_speed:                  25;
         cost_factor:                    60*param_purchase_cost;
         running_cost_factor:            88*param_running_cost;

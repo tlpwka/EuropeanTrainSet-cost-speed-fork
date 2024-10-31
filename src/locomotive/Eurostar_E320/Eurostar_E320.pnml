@@ -21,7 +21,7 @@ item(FEAT_TRAINS, Eurostar_E320, 1036){
         dual_headed:                    1;
         
         //spec
-        speed:                          370km/h;
+        speed:                          368km/h;
         power:                          8000 kW;
         weight:                         40 ton;
         tractive_effort_coefficient:    0.3;
@@ -37,7 +37,7 @@ item(FEAT_TRAINS, Eurostar_E320, 1036){
         cargo_capacity:                 30;
         refittable_cargo_classes:       NO_CARGO_CLASS;
         non_refittable_cargo_classes:   NO_CARGO_CLASS;
-        cargo_allow_refit:              [PASS];
+        cargo_allow_refit:              [PASS, MAIL, VALU];
         cargo_disallow_refit:           [];
         
         //Costs
@@ -52,7 +52,7 @@ item(FEAT_TRAINS, Eurostar_E320, 1036){
     graphics {
         default:                        sw_Eurostar_E320_engine;
         purchase:                       sw_Eurostar_E320_purchase;
-        speed:                          365;
+        speed:                          368;
         loading_speed:                  25;
         cost_factor:                    70*param_purchase_cost;
         running_cost_factor:            96*param_running_cost;

@@ -6,7 +6,11 @@ TGV Duplex
 
 // Switch
 #include "TGV_Duplex_switch.pnml"
-
+/* SPEED */
+    switch (FEAT_TRAINS, SELF, tgv_duplex_speed, current_year) {
+	    0..2025: return 329;                        // Until 2024, Speed = 390 km/h
+	    return 349;                                 // After 2024, Speed = 504 km/h
+    }
 /*--------------------------------------------------------------------
 열차정보
 --------------------------------------------------------------------*/
@@ -52,7 +56,7 @@ item(FEAT_TRAINS, TGV_Duplex, 1041){
 	graphics {
         default:                        sw_TGV_Duplex_engine;
         purchase:                       sw_TGV_Duplex_purchase;
-        speed:                          329;
+        speed:                          tgv_duplex_speed;
         loading_speed:                  25;
         cost_factor:                    62*param_purchase_cost;
         running_cost_factor:            95*param_running_cost;
