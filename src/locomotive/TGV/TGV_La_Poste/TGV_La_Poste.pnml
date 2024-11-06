@@ -9,7 +9,7 @@ TGV Old
 /* SPEED */
     switch (FEAT_TRAINS, SELF, tgv_post_speed, current_year) {
 	    0..2029: return 329;                        // Until 2024, Speed = 390 km/h
-	    return 503;                                 // After 2024, Speed = 504 km/h
+	    return 502;                                 // After 2024, Speed = 504 km/h
     }
 /*--------------------------------------------------------------------
 열차정보
